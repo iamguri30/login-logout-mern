@@ -21,8 +21,7 @@ function App() {
             }
 
             axios.post(url+"register", user).then((response) => {
-              alert(response.username)
-              console.log(response)
+              alert(response.data.username)
             }).catch((err) => {
               alert(err)
             })
