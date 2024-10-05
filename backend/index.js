@@ -48,7 +48,7 @@ run().catch(console.dir);
 
 app.post("/register", (req, res) => {
       console.log(req.body);
-  res.send(req.body.username)
+  res.send(req.body)
 });
 
 app.get("/", (req, res) => {
