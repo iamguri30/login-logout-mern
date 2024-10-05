@@ -4,7 +4,7 @@ import "./App.css";
 
 function App() {
   // const url = "http://localhost:5000/";
-  const url = "https://login-logout-mern-backend.onrender.com";
+  const url = "https://login-logout-mern-backend.onrender.com/";
       const [isSignUpActive, setIsSignUpActive] = useState(false);
 
       const toggleForm = () => {
