@@ -49,7 +49,8 @@ run().catch(console.dir);
 
 
 app.post("/register", (req, res) => {
-      console.log(req.body)
+      console.log(req.body);
+  res.send(req.body.username)
 });
 
 if(process.env.NODE_ENV == "production"){
