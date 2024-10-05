@@ -23,8 +23,6 @@ const client = new MongoClient(uri, {
   }
 });
 
-// admin
-// gOXcNwL2Ma1iUPfm
 
 let db;
 let usersCollection;
@@ -53,9 +51,9 @@ app.post("/register", (req, res) => {
   res.send(req.body.username)
 });
 
-if(process.env.NODE_ENV == "production"){
-      app.use(express.static("frontend/build"));
-}
+app.get("/", (req, res) => {
+  res.send("hii backend")
+});
 
 app.listen(PORT, () => {
       console.log("server is running on port 5000");
